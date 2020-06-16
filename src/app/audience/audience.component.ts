@@ -16,12 +16,12 @@ export class AudienceComponent implements OnInit {
         data: {
             labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
             datasets: [{
-                label: "Data",
-                borderColor: "#80b6f4",
-                pointBorderColor: "#80b6f4",
-                pointBackgroundColor: "#80b6f4",
-                pointHoverBackgroundColor: "#80b6f4",
-                pointHoverBorderColor: "#80b6f4",
+                label: "External",
+                borderColor: "#f05a28",
+                pointBorderColor: "#f05a28",
+                pointBackgroundColor: "#f05a28",
+                pointHoverBackgroundColor: "#f05a28",
+                pointHoverBorderColor: "#f05a28",
                 pointBorderWidth: 10,
                 pointHoverRadius: 10,
                 pointHoverBorderWidth: 1,
@@ -31,7 +31,7 @@ export class AudienceComponent implements OnInit {
                 data: [100, 120, 150, 170, 180, 170, 160]
             },
                       {
-                label: "Data",
+                label: "Internal",
                 borderColor: "#80b6f4",
                 pointBorderColor: "#80b6f4",
                 pointBackgroundColor: "#80b6f4",

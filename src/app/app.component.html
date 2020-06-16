@@ -1,73 +1,46 @@
-<mat-drawer-container>
-  <mat-drawer mode="side" opened>
-
-<mat-toolbar >
-  <mat-toolbar-row>
-    <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-      <mat-icon>home</mat-icon>
-    </button>
-
-  </mat-toolbar-row>
-  <mat-toolbar-row
-  ><button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-    <mat-icon>bookmark</mat-icon>
-  </button>
-</mat-toolbar-row>
-<mat-toolbar-row>
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-    <mat-icon>verified_user</mat-icon>
-  </button>
-
-</mat-toolbar-row>
-<mat-toolbar-row>
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-
-</mat-toolbar-row>
-
-<mat-toolbar-row>
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-    <mat-icon>verified_user</mat-icon>
-  </button>
-
-</mat-toolbar-row>
-</mat-toolbar>
-  
-  </mat-drawer>
-  <mat-drawer-content>
-    <header style="padding: 0%;margin:0%;color:blue"> 
-      <img src="../assets/icons/dash1.png" style="padding-left: 350px;padding-right:0px;">
-      <!-- <p> -->
-      <mat-icon matBadge="15" matBadgeColor="warn" style="float: right;" > home</mat-icon>
-      <span class="cdk-visually-hidden">
-        Example with a home icon with overlaid badge showing the number 15
-      </span>
-      <!-- </p>> -->
-    </header>
-    <mat-grid-list cols="3" rowHeight="1:1" style="padding-top: 0%;margin-top: 0%;">
-      <mat-grid-tile style="padding: 0%;margin: 0%;">
-        <app-interns></app-interns>
-      </mat-grid-tile>
-      <mat-grid-tile>
-<app-audience></app-audience>
+<app-nav>
+  <mat-drawer-container>
+   
+    <mat-drawer-content>
+      <header style="padding: 0%;margin:0%;color:black"> 
+        <div class="mat-display-3">Dotitude 
+        <img src="../assets/icons/99xt.jpg" style="padding-left: 5px;padding-right:0px;">  <!-- <p> -->
+        </div>  
+       
+        <!-- </p>> -->
+      </header>
+      <mat-grid-list cols="3" rowHeight="1:1" style="padding-top: 0%;margin-top: 0%;">
+        <mat-grid-tile >
+          <app-interns></app-interns>
         </mat-grid-tile>
-      <mat-grid-tile>
-        <app-linec></app-linec>
-      </mat-grid-tile>
-      <mat-grid-tile style="padding-top: 0%;margin-top: 0%;">
-        
-       <app-intcv></app-intcv>
-
-
-      </mat-grid-tile>
-      <mat-grid-tile>
-        <app-index></app-index>
+        <mat-grid-tile>
+  <app-audience></app-audience>
           </mat-grid-tile>
-      <mat-grid-tile>
-        <app-hist></app-hist>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </mat-drawer-content>
-</mat-drawer-container>
+        <mat-grid-tile>
+          <app-linec></app-linec>
+        </mat-grid-tile>
+        <mat-grid-tile >
+          
+         <app-intcv></app-intcv>
+  
+  
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <app-index></app-index>
+            </mat-grid-tile>
+        <mat-grid-tile>
+          <app-hist></app-hist>
+        </mat-grid-tile>
+ 
+       
+      </mat-grid-list>
+      <footer class="footer">
+        <p style="color: white;"> @99XTechnologies</p>
+        </footer>
+    </mat-drawer-content>
+    
+   
+  </mat-drawer-container>
+ 
+
 

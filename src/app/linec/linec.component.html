@@ -1,6 +1,6 @@
-<mat-card style="width:auto;height:auto">
+<mat-card style="width: 250px;height:280px">
   <b> Internship 4.0 Evaluation</b><br>
-    Round one<br>
+    <b>Round one</b><br>
 SE<mat-slider 
   (input)="someValue = $event.value" 
   [value]="someValue"
@@ -18,7 +18,7 @@ SE<mat-slider
   [value]="someValue2">
 </mat-slider>
 {{ someValue2 }}<br>
-Round 2<br>SE
+<b>Round 2</b><br>SE
 
 <mat-slider 
   (input)="someValue3 = $event.value" 
@@ -29,13 +29,6 @@ Round 2<br>SE
   (input)="someValue4 = $event.value" 
   [value]="someValue4">
 </mat-slider>
-{{ someValue4 }}<br>BA
-<mat-slider 
-  (input)="someValue5= $event.value" 
-  [value]="someValue5">
-</mat-slider>
-{{ someValue5 }}
-
-
+{{ someValue4 }}
 
 </mat-card>

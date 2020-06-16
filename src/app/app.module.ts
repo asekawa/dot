@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule} from './app-routing.module';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,6 +12,14 @@ import { HistComponent } from './hist/hist.component';
 import { LinecComponent } from './linec/linec.component';
 import { IntcvComponent } from './intcv/intcv.component';
 import { IndexComponent } from './index/index.component';
+import { NavComponent } from './nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { InternListComponent } from './intern-list/intern-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +28,21 @@ import { IndexComponent } from './index/index.component';
     HistComponent,
     LinecComponent,
     IntcvComponent,
-    IndexComponent
+    IndexComponent,
+    NavComponent,
+    InternListComponent,
+    AppRoutingModule
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatModule
+    MatModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   
   ],
   providers: [],
